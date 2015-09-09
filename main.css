@@ -1,0 +1,84 @@
+svg {
+    margin-top: 10px;
+}
+
+
+/* basic style */ 
+
+svg.basic #bg rect {
+    fill: white;
+}
+
+svg.basic #walls * {
+    fill: #333333;
+    stroke: #333333;
+}
+
+svg.basic #anno *, svg.basic #doors *, svg.basic #windows * {
+    stroke: grey;
+}
+
+svg.basic #anno_text *, svg.basic #furn *, svg.basic #furn_shad * {
+    display: none;
+}
+
+/* light style */ 
+
+svg.light #bg rect {
+    fill: white;
+}
+
+svg.light #furn *, svg.light #furn_shad * {
+    display: none;
+}
+
+
+/* dark style */ 
+
+svg.dark #bg rect {
+    fill: #333333;
+}
+
+svg.dark #floor * {
+    fill: #333333;
+}
+
+svg.dark #walls * {
+    fill: #666666;
+    stroke: #CCCCCC;
+}
+
+svg.dark #anno *, svg.dark #doors *, svg.dark #windows * {
+    stroke: #CCCCCC;
+}
+
+svg.dark #anno_text text {
+    fill: #CCCCCC;
+}
+
+svg.dark #furn *, svg.dark #furn_shad * {
+    display: none;
+}
+
+
+/* enhanced style */ 
+
+/*svg.enhanced #furn_shad { 
+    filter: "url(#drop_shadow)";
+}*/
+
+svg.enhanced #floor * {
+    fill: #99CCFF;
+    opacity: 0.1;
+}
+
+svg.enhanced #anno_text text {
+    font-family: "Georgia";
+    fill: #333333;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
